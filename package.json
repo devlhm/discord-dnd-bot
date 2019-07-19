@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run data && npm run build",
-    "data": "node db.js",
-    "build": "node index.js"
+    "start": "npm run build && npm run prod",
+    "build": "node db.js",
+    "prod": "node index.js"
 
   },
   "author": "Luis Henrique",
