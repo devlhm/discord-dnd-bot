@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "run data && run build",
+    "start": "npm run data && npm run build",
     "data": "node db.js",
     "build": "node index.js"
 
