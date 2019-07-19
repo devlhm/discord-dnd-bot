@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node db.js && nodemon index.js"
+    "start": "run data && run build",
+    "data": "node db.js",
+    "build": "node index.js"
+
   },
   "author": "Luis Henrique",
   "license": "ISC",
