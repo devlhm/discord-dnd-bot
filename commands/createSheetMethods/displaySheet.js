@@ -23,8 +23,13 @@ module.exports = (ficha, message, creating) => {
 
 	const embedSheet = new Discord.RichEmbed()
 		.setColor('#2b2b2b')
-		.setTitle(`**Ficha de ${uppercaseFirstLetter(ficha.basicStats.nome_personagem.value)}**`)
+		.setTitle(`**Ficha de ${ficha.basicStats.nome_personagem.value}**`)
 		.addField('Nome do Jogador', ficha.otherStats.nome_jogador);
+
+	if (ficha.otherStats.imagem) {
+		embedSheet
+			.setImage(ficha.otherStats.imagem);
+	}
 
 	if (ficha.basicStats.aparencia.value !== 'null') {
 		embedSheet

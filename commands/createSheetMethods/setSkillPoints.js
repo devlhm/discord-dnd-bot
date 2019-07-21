@@ -13,8 +13,7 @@ module.exports = (ficha, client, message) => {
 		return string;
 	}
 
-	const name = ficha.basicStats.nome_personagem.value;
-	client.charName = `**_${uppercaseFirstLetter(name)}_**`;
+	client.charName = `**_${ficha.basicStats.nome_personagem.value}_**`;
 
 	const attributeNames = Object.keys(ficha.attributes);
 	attributeNames.forEach(attribute => {

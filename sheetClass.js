@@ -30,6 +30,7 @@ module.exports = class {
 			nome_jogador: undefined,
 			classe: undefined,
 			atributo_principal: undefined,
+			imagem: undefined,
 			ca: 0,
 			vida: 0,
 			xp: 0,

@@ -13,6 +13,7 @@ module.exports = (connection, DataTypes) => {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
+		imagem: DataTypes.STRING,
 		aparencia: DataTypes.STRING,
 		historia: DataTypes.STRING,
 		alinhamento: {

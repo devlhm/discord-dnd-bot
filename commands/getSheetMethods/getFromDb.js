@@ -28,6 +28,7 @@ module.exports = async (client, message, char, updating, settingLevel) => {
 	ficha.basicStats.aparencia.value = basicInfo.aparencia;
 	ficha.basicStats.alinhamento.value = basicInfo.alinhamento;
 	ficha.otherStats.nome_jogador = basicInfo.nome_jogador;
+	ficha.otherStats.imagem = basicInfo.imagem;
 	ficha.otherStats.classe = basicInfo.classe;
 	ficha.otherStats.vida = basicInfo.vida;
 	ficha.otherStats.nivel = basicInfo.nivel;
