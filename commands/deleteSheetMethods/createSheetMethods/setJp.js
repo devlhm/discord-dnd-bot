@@ -1,5 +1,5 @@
 module.exports = (client, ficha, message, updating) => {
-	const jpTable = require('../../jpTable');
+	const jpTable = require('../../../jpTable');
 	const jpTypes = Object.keys(jpTable);
 	const lvl = ficha.otherStats.nivel;
 	message.channel.send('**Calculando JP...**');
@@ -45,8 +45,7 @@ module.exports = (client, ficha, message, updating) => {
 	if (!updating) {
 		calculateCa(client, message, ficha);
 	} else {
-		console.log('will save');
-		const updateFieldsAtDb = require('../addXpMethods/updateFieldsAtDb');
+		const updateFieldsAtDb = require('../../addXpMethods/updateFieldsAtDb');
 		updateFieldsAtDb(ficha);
 	}
 };

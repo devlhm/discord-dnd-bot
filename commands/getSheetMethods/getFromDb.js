@@ -54,13 +54,13 @@ module.exports = async (client, message, char, updating, settingLevel) => {
 	console.log('ficha :', ficha);
 
 	if (updating) {
-		const calculateHealth = require('../createSheetMethods/calculateHealth');
+		const calculateHealth = require('../deleteSheetMethods/createSheetMethods/calculateHealth');
 		calculateHealth(ficha, message, client, updating);
 	} else if (settingLevel) {
-		const setJp = require('../createSheetMethods/setJp');
+		const setJp = require('../deleteSheetMethods/createSheetMethods/setJp');
 		setJp(client, ficha, message, true);
 	} else {
-		const displaySheet = require('../createSheetMethods/displaySheet');
+		const displaySheet = require('../deleteSheetMethods/createSheetMethods/displaySheet');
 		displaySheet(ficha, message);
 	}
 };

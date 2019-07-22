@@ -1,4 +1,4 @@
-const usersChoosingMainAttribute = require('../../usersChoosingMainAttribute');
+const usersChoosingMainAttribute = require('../../../usersChoosingMainAttribute');
 
 module.exports = (client, message, mainAttributes, statement) => {
 	return new Promise(resolve => {
