@@ -14,6 +14,11 @@ module.exports = async (client, message, char) => {
 
 	const handler = message => {
 		if (messageAuthor !== message.author) return;
+		if (message.content.toLowerCase() === 'cancelar') {
+			message.channel.send('Operação cancelada');
+			client.off('message', handler);
+			return;
+		}
 
 		const attachments = message.attachments;
 		if (attachments.length === 0) {
@@ -32,6 +37,8 @@ module.exports = async (client, message, char) => {
 				{ where: { nome_personagem: char } }
 			);
 		}
+
+		client.off('message', handler);
 	};
 
 	client.on('message', handler);

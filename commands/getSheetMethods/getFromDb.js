@@ -27,6 +27,7 @@ module.exports = async (client, message, char, updating, settingLevel) => {
 	ficha.basicStats.nome_personagem.value = basicInfo.nome_personagem;
 	ficha.basicStats.aparencia.value = basicInfo.aparencia;
 	ficha.basicStats.alinhamento.value = basicInfo.alinhamento;
+	ficha.basicStats.historia.value = basicInfo.historia;
 	ficha.otherStats.nome_jogador = basicInfo.nome_jogador;
 	ficha.otherStats.imagem = basicInfo.imagem;
 	ficha.otherStats.classe = basicInfo.classe;
