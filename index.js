@@ -25,11 +25,10 @@ client.on('message', message => {
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-	console.log('usersCreating :', usersCreating);
 	if (command === 'novo' && usersCreating[message.author.id]) return;
 
 	if (!client.commands.get(command)) {
-		message.channel.send('Comando inválido! Digite "ajuda" para ver os comandos');
+		message.channel.send('Comando inválido! Digite' + prefix + '"ajuda" para ver os comandos');
 		return;
 	}
 
