@@ -3,7 +3,7 @@ const { InfoBasicas } = require('../dbObjects');
 module.exports = {
 	name: 'adicionar-ca',
 	desc: '<personagem> <quantia-xp> - Adiciona CA ao personagem selecionado',
-	execute (client, message, args) {
+	async execute (client, message, args) {
 		if (!message.member.roles.some(role => role.name === 'Bot Admin')) {
 			message.channel.send('Você precisa do cargo "Bot Admin" para poder fazer isso!');
 			return;
