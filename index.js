@@ -28,7 +28,7 @@ client.on('message', message => {
 	if (command === 'novo' && usersCreating[message.author.id]) return;
 
 	if (!client.commands.get(command)) {
-		message.channel.send('Comando inválido! Digite' + prefix + '"ajuda" para ver os comandos');
+		message.channel.send('Comando inválido! Digite "' + prefix + 'ajuda" para ver os comandos');
 		return;
 	}
 
