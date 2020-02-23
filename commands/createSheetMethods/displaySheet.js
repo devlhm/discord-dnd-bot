@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const usersCreating = require('../../../usersCreating');
-const classInfo = require('../../../classInfo');
+const usersCreating = require('../../usersCreating');
+const classInfo = require('../../classInfo');
 
 module.exports = (ficha, message, creating) => {
 	function parseField (input, toUpper) {

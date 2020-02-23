@@ -1,5 +1,5 @@
-const usersCreating = require('../../../usersCreating');
-const usersChoosingMainAttribute = require('../../../usersChoosingMainAttribute');
+const usersCreating = require('../../usersCreating');
+const usersChoosingMainAttribute = require('../../usersChoosingMainAttribute');
 
 module.exports = (ficha, client, message, mainAtbToSend) => {
 	function parseAttributeToSend (string) {

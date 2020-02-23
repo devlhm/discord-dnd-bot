@@ -1,7 +1,7 @@
 module.exports = (ficha, message, client, updating) => {
 	message.channel.send('**Calculando pontos de vida...**');
 	const charClass = ficha.otherStats.classe;
-	const classInfo = require('../../../classInfo');
+	const classInfo = require('../../classInfo');
 	const min = 1;
 	const max = classInfo[charClass].dv;
 	console.log('max :', max);

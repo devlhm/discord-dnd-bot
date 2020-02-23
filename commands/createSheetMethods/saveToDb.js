@@ -1,4 +1,4 @@
-const { Ajustes, Atributos, JP, InfoBasicas } = require('../../../dbObjects');
+const { Ajustes, Atributos, JP, InfoBasicas } = require('../../dbObjects');
 
 module.exports = (ficha) => {
 	console.log('saving');
