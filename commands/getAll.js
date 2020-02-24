@@ -9,7 +9,7 @@ module.exports = {
 		}
 
 		const basicInfo = await InfoBasicas.findAll({
-			attributes: ['nome_personagem, nome_jogador']
+			attributes: ['nome_personagem', 'nome_jogador']
 		});
 	
 		let messageToSend = '';
