@@ -49,7 +49,7 @@ module.exports = {
 		let newXp = foundChar.xp + adjustedAmountToAdd;
 		let newLvl = foundChar.nivel;
 	
-		const classInfo = require('../../classInfo');
+		const classInfo = require('../classInfo');
 	
 		if (newXp >= (classInfo[foundChar.classe].xpToUp * Math.pow(2, foundChar.nivel - 1))) {
 			newXp = 0;
